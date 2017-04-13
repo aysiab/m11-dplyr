@@ -22,11 +22,13 @@ unique(vehicles.1997$year)
 two.wheel.drive <- vehicles[vehicles$drive == '2-Wheel Drive' & vehicles$cty > 20,]
 
 # Of those vehicles, what is the vehicle ID of the vehicle with the worst hwy mpg?
-worst.hwy <- two.wheel.drive$id[two.wheel.drive]
+worst.hwy <- two.wheel.drive$id[two.wheel.drive$hwy == min(two.wheel.drive$hwy)]
 
 # Write a function that takes a `year` and a `make` as parameters, and returns 
 # The vehicle that gets the most hwy miles/gallon of vehicles of that make in that year
-
+YearAndMake <- function(year, make) {
+  
+}
 
 # What was the most efficient honda model of 1995?
 
